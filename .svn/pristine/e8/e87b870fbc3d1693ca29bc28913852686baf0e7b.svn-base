@@ -1,0 +1,201 @@
+#wpadminbar {
+	z-index: 9999;
+}
+#wpstoryboardgallery_container {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,0.9);
+	z-index: 10000;
+}
+.ie8 #wpstoryboardgallery_container {
+	background: #888;
+	
+}
+#wpstoryboardgallery {
+	background: white;
+	width: 9999999px;
+	position: absolute;
+}
+#wpstoryboardgallery div {
+	float: left;
+	position: relative;
+	height: 100%;
+}
+#wpstoryboardgallery h2 {
+	position: absolute;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: block;
+	width: 50%;
+	left: 50%;
+	margin-left: -25%;
+	top: 5%;
+	font-size: 25px;
+	-webkit-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+	opacity: 0.5;
+}
+#wpstoryboardgallery div:hover h2 {
+	opacity: 1;
+}
+
+#wpstoryboardgallery_pagination {
+	z-index: 10099;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#wpstoryboardgallery_pagination {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	width: 100%;
+	-webkit-transition: opacity 0.5s ease;
+	-moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+	opacity: 0.2;
+}
+
+#wpstoryboardgallery_pagination:hover {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	width: 100%;
+	opacity: 1;
+}
+
+#wpstoryboardgallery_pagination a {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background: #fff;
+	-webkit-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+	padding: 5px 10px;
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 5px;
+	text-decoration: none;
+}
+
+#wpstoryboardgallery_pagination span {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	-webkit-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+	padding: 5px 10px;
+	font-size: 14px;
+	font-weight: bold;
+	background: #333;
+	color: #fff;
+	margin: 0 5px;
+}
+
+#wpstoryboardgallery_pagination a:hover {
+	text-decoration: none;
+	
+}
+
+#wpstoryboardgallery_pagination a.active {
+	
+}
+
+
+#wpstoryboardgallery img {
+	display: block;
+	width: auto;
+	cursor: pointer;
+	height: auto;
+}
+#wpstoryboardgallery span {
+	display: block;
+	background: white;
+	padding: 0 5px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	font-size: 10px;
+}
+#wpstoryboardgallery img.lazyload {
+	display: none;
+	max-height: 20px;
+}
+.wpstoryboardgallery_close {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	background: white;
+	-webkit-border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 20px;
+    text-decoration: none;
+    width: 30px;
+    text-align: center;
+    color: #333;
+    -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	z-index: 10001;
+	opacity: 0.5;
+}
+
+.wpstoryboardgallery_close:hover {
+	text-decoration: none;
+	opacity: 1;
+}
+
+.wpstoryboardgallery_close:active {
+	background: #000;
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+@media all and (min-width: 500px) {
+	body:after {
+	    content: 'medium';
+	    display: none;
+	}
+	#wpstoryboardgallery span {
+		font-size: 12px;
+	}
+}
+@media all and (min-width: 800px) {
+	body:after {
+	    content: 'full';
+	    display: none;
+	}
+	#wpstoryboardgallery span {
+		font-size: 14px;
+	}
+}

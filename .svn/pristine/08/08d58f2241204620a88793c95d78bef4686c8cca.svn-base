@@ -1,0 +1,108 @@
+#wpstoryboardgalleries_thumbs li {
+    margin: 4px ;
+    padding: 0;
+    display: block;
+    position: relative;
+    background: #eee;
+    padding: 5px;
+    border: 1px solid #DFDFDF;
+}
+#wpstoryboardgalleries_thumbs li img {
+    cursor: move;
+    padding: 0 5% 0 0;
+    margin: 0;
+    float: left;
+}
+#wpstoryboardgalleries_thumbs li .wpstoryboardgalleries_remove {
+    display: block;
+    text-indent: -9999px;
+    outline: 0;
+    background: url(delete_thumb.png) no-repeat 0 0;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+}
+
+#wpstoryboardgalleries_thumbs li label {
+    padding-left: 3px;
+}
+
+.wpstoryboardgalleries_thumb_form_container {
+    width: 65%;
+    float: left;
+}
+
+.wpstoryboardgalleries_thumb_form_container input[type=text] {
+    margin: 5px 0;
+}
+
+.wpstoryboardgalleries_thumb_form_container .wpstoryboardgalleries_link {
+    display: none;
+}
+.wpstoryboardgalleries_thumb_form_container .wpstoryboardgalleries_text {
+    display: none;
+}
+.wpstoryboardgalleries_thumb_form_container .showfield {
+    display: block;
+}
+
+#wpstoryboardgalleries_thumbs li input[type=text] {
+    width: 100%;
+}
+
+.wpstoryboardgalleries_placeholder {
+    border: 1px dashed #ccc !important
+}
+.ui-sortable-helper {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+#wpstoryboardgalleries_container .clearfix:before,
+#wpstoryboardgalleries_container .clearfix:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+#wpstoryboardgalleries_container .clearfix:after {
+    clear: both
+}
+#wpstoryboardgalleries_container .clearfix {
+    zoom: 1
+}
+#optionsframework .controls .of-radio-img-img {
+    margin: 10px;
+    border: 3px solid #eee;
+}
+#optionsframework .controls .of-radio-img-selected {
+    border: 3px solid #921d26;
+}
+#optionsframework .section .controls {
+    float: none;
+    width: 95%;
+}
+#optionsframework .section .explain {
+    float: none;
+    clear:both;
+}
+#wpstoryboardgalleries_auto_open {
+    margin-left: 10px;
+}
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
